@@ -15,10 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <!--libs-->
-    <link rel="stylesheet" href="/static/scripts/ui/OwlCarousel2/owl.carousel.min.css">
-    <link rel="stylesheet" href="/static/scripts/ui/OwlCarousel2/owl.theme.default.min.css">
     <!--styles-->
     <link rel="stylesheet" href="https://ruslanmmr.github.io/Enerone/build/styles/new.css" type="text/css">
+    <link rel="stylesheet" href="https://ruslanmmr.github.io/Enerone/build/styles/lc.css" type="text/css">
   </head>
   <body>
     <div class="user_mobile_menu__wrapper user_mobile_menu__wrapper__active"><span class="user_mobile_menu__corner"></span>
@@ -83,121 +82,39 @@
       </div>
     </div>
     <div class="site-index">
-      <div class="home-banner carousel slide -mb-6" id="banner" data-ride="carousel" data-interval="false">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#banner" data-slide-to="0"></li>
-          <li data-target="#banner" data-slide-to="1"></li>
-          <li data-target="#banner" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-                    <!--slide-->
-                    <div class="carousel-item home-banner__slide active"><a class="home-banner__slide-bg" href="#" style="background-image: url(https://energuide.ru/static/images/img1.jpg);"></a>
-                      <div class="home-banner__slide-container container">
-                        <div class="home-banner__slide-content">
-                          <div class="home-banner__slide-top"><img src="https://ruslanmmr.github.io/Enerone/build/img/new-logo.svg"><span>Энергетическая<br> компания</span></div>
-                          <div class="home-banner__slide-text"><strong>Не трачу время на текущие платежи,<br> </strong>а занимаюсь развитием своего бизнеса!</div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--slide-->
-                    <div class="carousel-item home-banner__slide"><a class="home-banner__slide-bg" href="#" style="background-image: url(https://energuide.ru/static/images/img2.jpg);"></a>
-                      <div class="home-banner__slide-container container">
-                        <div class="home-banner__slide-content">
-                          <div class="home-banner__slide-top"><img src="https://ruslanmmr.github.io/Enerone/build/img/new-logo.svg"><span>Энергетическая<br> компания</span></div>
-                          <div class="home-banner__slide-text"><strong>Не трачу время на текущие платежи,<br> </strong>а занимаюсь развитием своего бизнеса!</div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--slide-->
-                    <div class="carousel-item home-banner__slide"><a class="home-banner__slide-bg" href="#" style="background-image: url(https://energuide.ru/static/images/img3.jpg);"></a>
-                      <div class="home-banner__slide-container container">
-                        <div class="home-banner__slide-content">
-                          <div class="home-banner__slide-top"><img src="https://ruslanmmr.github.io/Enerone/build/img/new-logo.svg"><span>Энергетическая<br> компания</span></div>
-                          <div class="home-banner__slide-text"><strong>Не трачу время на текущие платежи,<br> </strong>а занимаюсь развитием своего бизнеса!</div>
-                        </div>
-                      </div>
-                    </div>
-        </div><a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
-          <svg class="home-banner__icon home-banner__prev" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
-          </svg><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#banner" role="button" data-slide="next">
-          <svg class="home-banner__icon home-banner__next" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
-          </svg><span class="sr-only">Next</span></a>
-      </div>
-      <div class="container-fluid -mb-6">
-        <div class="row teaserList">
-          <div class="col-md-4 col-sm-6 teaserList__col">
-            <div class="teaserBlock">
-              <div class="teaserBlock__media"><a href="/calculators/"><img class="teaserBlock__img" src="/static/images/img1.jpg" alt=""></a></div>
-              <div class="teaserBlock__content">
-                <h2 class="teaserBlock__title"><a href="/calculators/">Калькулятор</a></h2>
-                <div class="teaserBlock__txt">Сравнивайте цены на оптовом и розничном рынках электроэнергии от различных поставщиков</div><a class="teaserBlock__btn btn btn-primary" href="/calculators/">Сократить расходы</a>
-              </div>
+      <div class="lc-wrapper">
+        <div class="container lc-wrapper__grid-container">
+          <div class="lc-sidebar-area toggle-section" data-out-hide>
+            <button class="lc-mobile-nav-btn toggle-section__trigger" aria-label="open nav"><span> </span><span>Меню личного кабинета</span></button>
+            <div class="lc-sidebar-area__content toggle-section__content">
+              <h2 class="lc-sidebar-area__title">Личный кабинет</h2>
+              <div class="lc-sidebar-area__head"><img class="lc-sidebar-area__image" src="/static/images/user.svg" alt="icon"><span class="lc-sidebar-area__name">Лужецкий<br> Дмитрий Александрович</span></div>
+              <div class="lc-sidebar-area__bottom"><span class="lc-sidebar-area__company">Fancymedia</span><a class="lc-text-link lc-sidebar-area__exit" href="/"><span>Выйти</span>
+                  <svg class="icon" viewBox="0 0 22 22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M10 18V21H21V1H10V4"></path>
+                    <path d="M12 11H2"></path>
+                    <path d="M6 6L2 11L6 16"></path>
+                  </svg></a></div>
+              <ul class="lc-sidebar-area__nav-list">
+                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc2.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">Главная</div></a></li>
+                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc3.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-shovel.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">Показания</div></a></li>
+                <li class="lc-sidebar-area__nav-item"> <a class="active lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc7.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-shovel.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">Взаиморасчеты</div></a></li>
+                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc4.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">История</div></a></li>
+                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc5.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">Сообщения<span>3</span></div></a></li>
+                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lc6.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-profile.svg" alt="image">
+                    <div class="lc-sidebar-area__nav-link-txt">Профиль</div></a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 teaserList__col">
-            <div class="teaserBlock">
-              <div class="teaserBlock__media"><a href="/analytics/"><img class="teaserBlock__img" src="/static/images/img2.jpg" alt=""></a></div>
-              <div class="teaserBlock__content">
-                <h2 class="teaserBlock__title"><a href="/analytics/">Аналитика</a></h2>
-                <div class="teaserBlock__txt">Прогнозируйте расходы с точностью до 95%: цены оптового рынка, тарифы на передачу и сбытовые надбавки</div><a class="teaserBlock__btn btn btn-primary" href="/analytics/">Сделать прогноз</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 teaserList__col">
-            <div class="teaserBlock">
-              <div class="teaserBlock__media"><a href="/power_supply/"><img class="teaserBlock__img" src="/static/images/img3.jpg" alt=""></a></div>
-              <div class="teaserBlock__content">
-                <h2 class="teaserBlock__title"><a href="/power_supply/">Энергоснабжение</a></h2>
-                <div class="teaserBlock__txt">Заключите договор энергоснабжения с надежнымы энергосбытовыми компаниями</div><a class="teaserBlock__btn btn btn-primary" href="/power_supply/">Отправить заявку</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="blockLarge blockLarge--green -py-6">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-10 offset-md-1">
-              <h1 class="blockLarge__title">Выбирайте Зеленую энергию</h1>
-              <div class="blockLarge__txt">Наша задача — делать это так, чтобы мир был чище за счёт преобразований в энергосистемах, более эффективного использования ресурсов и применения интеллектуальных технологических решений. Мы призываем наших потребителей присоединяться к этим изменениям</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mainTop mainTop--right" style="background-image: url(/static/images/fortum.jpg);">
-        <div class="mainTop__decoration" style="background-image: url(https://ruslanmmr.github.io/Enerone/build/img/ffddfllld.png);"></div>
-        <div class="mainTop__item container-fluid">
-          <div class="mainTop__display row">
-            <div class="col-xl-4 col-md-8 d-flex align-items-center">
-              <div class="mainTop__content">
-                <h2 class="mainTop__title">Получите уникальные условия на покупку «зеленой» энергии</h2><a class="mainTop__btn btn btn-primary" href="/green_energy/">Отправить заявку</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="facts -py-6">
-        <div class="container">
-          <div class="facts__row row">
-            <div class="facts__col col-lg-4 col-md-6">
-              <div class="facts__item">
-                <div class="facts__val">96%</div>
-                <div class="facts__desc">Электроэнргии производится без выбросов СО2</div>
-              </div>
-            </div>
-            <div class="facts__col col-lg-4 col-md-6">
-              <div class="facts__item">
-                <div class="facts__val">5,11 ГВт</div>
-                <div class="facts__desc">должна составить суммарная мощность ветроэлектростанций и солнечных электростанциий в России к 2024 году</div>
-              </div>
-            </div>
-            <div class="facts__col col-lg-4 col-md-6">
-              <div class="facts__item">
-                <div class="facts__val">14</div>
-                <div class="facts__desc">ветроустановок установлено на первой в России ветроэлектростанци в Ульяновской области</div>
-              </div>
+          <div class="lc-wrapper__section">
+            <h1 class="lc-wrapper__title">Взаиморасчеты</h1>
+            <div class="lc-filters">
+              <div class="row"></div>
             </div>
           </div>
         </div>
@@ -278,6 +195,10 @@
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/additional-methods.js"></script>
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/localization/messages_ru.min.js"></script>
     <script type="text/javascript" src="/static/scripts/helpers.js"></script>
+    <!--lc scripts-->
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="https://ruslanmmr.github.io/Enerone/build/scripts/lc.js"></script>
     <!--helper (preview only)-->
     <link rel="stylesheet" href="https://ruslanmmr.github.io/Enerone/build/styles/helper.css">
     <div class="helper"><a class="helper__trigger" href="javascript:void(0);">
