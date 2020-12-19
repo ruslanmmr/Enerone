@@ -15707,6 +15707,15 @@ input.error, .active-label + .error {
     .header__call-btn:hover {
       border-color: transparent #fff; } }
 
+.n-form__container {
+  margin-bottom: -20px; }
+
+.n-form__item {
+  margin-bottom: 20px; }
+
+.n-form__button {
+  width: 100%; }
+
 .button {
   cursor: pointer;
   appearance: none;

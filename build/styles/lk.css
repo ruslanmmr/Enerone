@@ -778,15 +778,6 @@ span.flatpickr-weekday {
       line-height: 36px;
       min-width: 36px; } }
 
-.n-form__container {
-  margin-bottom: -20px; }
-
-.n-form__item {
-  margin-bottom: 20px; }
-
-.n-form__button {
-  width: 100%; }
-
 .lc-block:not(:last-child) {
   margin-bottom: 40px;
   padding-bottom: 35px;
