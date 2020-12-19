@@ -38,7 +38,7 @@
                       | Русский (ru)
                     option(value='en')
                       | English (en)
-                  --><a class="header-link" href="/users/login/">Выйти</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lc1.html">дл</a>
+                  --><a class="header-link" href="https://ruslanmmr.github.io/Enerone/build/lk1.html"> <strong>Кабинет — dmitry</strong></a><a class="header-link" href="/users/login/">(Выйти)</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">дл</a>
                 </div>
                 <div class="header__contacts"><a href="tel:+73512143334">+7 (35-12) 14-33-34</a><a href="mailto:info@esk-ne.ru">info@esk-ne.ru</a></div>
                 <ul class="header__nav">
@@ -123,6 +123,11 @@
                                     <div class="lc-contract__head-block"><span>Тариф</span><span>Фиксированные цены 08.20/12.20</span></div>
                                     <div class="lc-contract__head-block"><span>Текущий долг, руб.</span><span>10 000</span></div>
                                     <div class="lc-contract__head-block"><span>Пени, руб.</span><span>800</span></div>
+                                    <div class="lc-contract__head-block"><span class="btn btn-default btn-actions btn-actions-red btn-unbind-contract">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.24219 4.24219L12.7275 12.7275" stroke="#D5D5D5" stroke-width="2"></path>
+                                          <path d="M4.24219 12.7266L12.7275 4.24128" stroke="#D5D5D5" stroke-width="2"></path>
+                                        </svg>Отвязать</span></div>
                                   </div>
                                   <div class="lc-contract__content toggle-section" data-slide><a class="lc-contract__toggle toggle-section__trigger" href="javascript:void(0);">Объекты договора
                                       <svg class="icon" viewBox="0 0 22 13" fill="none" stroke="currentColor">
@@ -173,6 +178,11 @@
                                     <div class="lc-contract__head-block"><span>Тариф</span><span>Фиксированные цены 08.20/12.20</span></div>
                                     <div class="lc-contract__head-block"><span>Текущий долг, руб.</span><span>10 000</span></div>
                                     <div class="lc-contract__head-block"><span>Пени, руб.</span><span>800</span></div>
+                                    <div class="lc-contract__head-block"><span class="btn btn-default btn-actions btn-actions-red btn-unbind-contract">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.24219 4.24219L12.7275 12.7275" stroke="#D5D5D5" stroke-width="2"></path>
+                                          <path d="M4.24219 12.7266L12.7275 4.24128" stroke="#D5D5D5" stroke-width="2"></path>
+                                        </svg>Отвязать</span></div>
                                   </div>
                                   <div class="lc-contract__content toggle-section" data-slide><a class="lc-contract__toggle toggle-section__trigger" href="javascript:void(0);">Объекты договора
                                       <svg class="icon" viewBox="0 0 22 13" fill="none" stroke="currentColor">
@@ -223,6 +233,11 @@
                                     <div class="lc-contract__head-block"><span>Тариф</span><span>Фиксированные цены 08.20/12.20</span></div>
                                     <div class="lc-contract__head-block"><span>Текущий долг, руб.</span><span>10 000</span></div>
                                     <div class="lc-contract__head-block"><span>Пени, руб.</span><span>800</span></div>
+                                    <div class="lc-contract__head-block"><span class="btn btn-default btn-actions btn-actions-red btn-unbind-contract">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.24219 4.24219L12.7275 12.7275" stroke="#D5D5D5" stroke-width="2"></path>
+                                          <path d="M4.24219 12.7266L12.7275 4.24128" stroke="#D5D5D5" stroke-width="2"></path>
+                                        </svg>Отвязать</span></div>
                                   </div>
                                   <div class="lc-contract__content toggle-section" data-slide><a class="lc-contract__toggle toggle-section__trigger" href="javascript:void(0);">Объекты договора
                                       <svg class="icon" viewBox="0 0 22 13" fill="none" stroke="currentColor">
@@ -341,7 +356,7 @@
     <script src="/static/scripts/main.js"></script>
     <script src="/static/scripts/js.cookie.js"></script>
     <script src="/static/scripts/csrf.js"></script>
-    <!--script(type='text/javascript' src='/static/scripts/ui/global.js')-->
+    <script src="https://ruslanmmr.github.io/Enerone/build/scripts/libs/scroll-lock.min.js"></script>
     <script src="https://ruslanmmr.github.io/Enerone/build/scripts/global.js"></script>
     <script type="text/javascript" src="/static/scripts/ui/dia.js"></script>
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/jquery.validate.js"></script>
@@ -365,12 +380,16 @@
         </svg></a>
       <div class="helper__container">
         <!--section-->
+        <div class="helper__section"><span class="helper__section-title">Всплывающие окна:</span>
+          <div class="helper__section-content"><a class="helper__section-button" href="#info" data-popup-open>Предупреждение</a><a class="helper__section-button" href="#feedback" data-popup-open>Обратная связь</a></div>
+        </div>
+        <!--section-->
         <div class="helper__section"><span class="helper__section-title">Страницы:</span>
           <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/index.html">Главная</a></div>
         </div>
         <!--section-->
         <div class="helper__section"><span class="helper__section-title">Личный кабинет:</span>
-          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Лк — Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Лк — Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Лк — Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">Лк — История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Лк — Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Лк — Профиль</a></div>
+          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Лк — Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Лк — Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Лк — Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk7.html">Лк — Взаиморасчеты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">Лк — История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Лк — Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Лк — Профиль</a></div>
         </div>
       </div>
     </div>

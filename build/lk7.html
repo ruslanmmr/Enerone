@@ -38,7 +38,7 @@
                       | Русский (ru)
                     option(value='en')
                       | English (en)
-                  --><a class="header-link" href="/users/login/">Выйти</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lc1.html">дл</a>
+                  --><a class="header-link" href="https://ruslanmmr.github.io/Enerone/build/lk1.html"> <strong>Кабинет — dmitry</strong></a><a class="header-link" href="/users/login/">(Выйти)</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">дл</a>
                 </div>
                 <div class="header__contacts"><a href="tel:+73512143334">+7 (35-12) 14-33-34</a><a href="mailto:info@esk-ne.ru">info@esk-ne.ru</a></div>
                 <ul class="header__nav">
@@ -88,8 +88,219 @@
           </div>
           <div class="lc-wrapper__section">
             <h1 class="lc-wrapper__title">Взаиморасчеты</h1>
-            <div class="lc-filters">
-              <div class="row"></div>
+            <!--filter-->
+            <div class="lc-filters row">
+              <div class="col-md col-sm-6">
+                <div class="row flex-nowrap">
+                  <div class="col-auto lc-filters__mobile-label">от</div>
+                  <div class="col lc-filters__item">
+                    <div class="form-group select-small">
+                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
+                      <select class="form-control" id="select1" name="select4" required="">
+                        <option value=""> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col lc-filters__item">
+                    <div class="form-group select-small">
+                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Год">Год</label>
+                      <select class="form-control" id="select2" name="select4" required="">
+                        <option value=""> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto lc-filters__line"></div>
+              <div class="col-md col-sm-6">
+                <div class="row flex-nowrap">
+                  <div class="col-auto lc-filters__mobile-label">до</div>
+                  <div class="col lc-filters__item">
+                    <div class="form-group select-small">
+                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
+                      <select class="form-control" id="select3" name="select4" required="">
+                        <option value=""> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col lc-filters__item">
+                    <div class="form-group select-small">
+                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Год">Год</label>
+                      <select class="form-control" id="select4" name="select4" required="">
+                        <option value=""> </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto lc-filters__item order-sm-4">
+                <button class="button button_style-1 button_small">Показать</button>
+              </div>
+              <div class="col-auto lc-filters__item order-sm-3">
+                <button class="button button_style-2 button_small">Сбросить</button>
+              </div>
+            </div>
+            <!--table-->
+            <div class="lc-table">
+              <table class="table table_mobile lc-table__table">
+                <tr class="table__head">
+                  <th></th>
+                  <th>Год</th>
+                  <th>Месяц</th>
+                  <th>Сальдо начальное, руб</th>
+                  <th>Предъявлено в текущем периоде, руб</th>
+                  <th>Перерасчеты, руб.</th>
+                  <th>Оплачено в текущем периоде, руб.</th>
+                  <th>Конечное сальдо, руб.</th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table__content">
+                      <div class="form-check">
+                        <input class="form-check-input" id="checkbox1" type="checkbox" value="">
+                        <label class="form-check-label" for="checkbox1"></label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Год</div>
+                    <div class="table__content">2020</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Месяц</div>
+                    <div class="table__content">Февраль</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Сальдо начальное, руб</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Предъявлено в текущем периоде, руб</div>
+                    <div class="table__content">10 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Перерасчеты, руб.</div>
+                    <div class="table__content">3 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Оплачено в текущем периоде, руб.</div>
+                    <div class="table__content">13 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Конечное сальдо, руб.</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table__content">
+                      <div class="form-check">
+                        <input class="form-check-input" id="checkbox2" type="checkbox" value="">
+                        <label class="form-check-label" for="checkbox2"></label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Год</div>
+                    <div class="table__content">2020</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Месяц</div>
+                    <div class="table__content">Январь</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Сальдо начальное, руб</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Предъявлено в текущем периоде, руб</div>
+                    <div class="table__content">10 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Перерасчеты, руб.</div>
+                    <div class="table__content">3 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Оплачено в текущем периоде, руб.</div>
+                    <div class="table__content">13 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Конечное сальдо, руб.</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table__content">
+                      <div class="form-check">
+                        <input class="form-check-input" id="checkbox3" type="checkbox" value="">
+                        <label class="form-check-label" for="checkbox3"></label>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Год</div>
+                    <div class="table__content">2019</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Месяц</div>
+                    <div class="table__content">Декабрь</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Сальдо начальное, руб</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Предъявлено в текущем периоде, руб</div>
+                    <div class="table__content">10 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Перерасчеты, руб.</div>
+                    <div class="table__content">3 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Оплачено в текущем периоде, руб.</div>
+                    <div class="table__content">13 000,00</div>
+                  </td>
+                  <td>
+                    <div class="table__m-head">Конечное сальдо, руб.</div>
+                    <div class="table__content">5 000,00</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--print-->
+            <div class="lc-print-line">
+              <div class="lc-print-line__head"> <img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/printer.svg" alt="icon"><span>Напечатать:</span></div>
+              <ul class="lc-print-line__list">
+                <li class="lc-print-line__item"><a class="lc-print-line__link" href="#">Счет</a></li>
+                <li class="lc-print-line__item"><a class="lc-print-line__link" href="#">Счет-Фактура</a></li>
+                <li class="lc-print-line__item"><a class="lc-print-line__link" href="#">Акт приема-передачи</a></li>
+                <li class="lc-print-line__item"><a class="lc-print-line__link" href="#">Акт сверки</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--popup-->
+        <div class="popup popup-alert" id="info" data-scroll-lock-scrollable data-scroll-lock-fill-gap>
+          <div class="popup-block">
+            <div class="popup-block__container popup-alert__container"><img class="popup-alert__icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-alert.svg" alt="icon">
+              <h6 class="popup-alert__title">Документ не может быть напечатан</h6>
+              <p>Выберите период, за который необходимо распечатать <span>Счет</span></p>
+              <div class="popup-alert__scene"><img class="popup-alert__scene-image" src="https://ruslanmmr.github.io/Enerone/build/img/table.jpg" alt="img"><img class="popup-alert__scene-cursor" src="https://ruslanmmr.github.io/Enerone/build/img/cursor.svg" alt="cursor"><img class="popup-alert__scene-check" src="https://ruslanmmr.github.io/Enerone/build/img/check.jpg" alt="cursor"></div>
+              <button class="button button_style-1 button_small popup-alert__button" aria-label="close" type="button" data-popup-close>ОК</button>
             </div>
           </div>
         </div>
@@ -163,7 +374,7 @@
     <script src="/static/scripts/main.js"></script>
     <script src="/static/scripts/js.cookie.js"></script>
     <script src="/static/scripts/csrf.js"></script>
-    <!--script(type='text/javascript' src='/static/scripts/ui/global.js')-->
+    <script src="https://ruslanmmr.github.io/Enerone/build/scripts/libs/scroll-lock.min.js"></script>
     <script src="https://ruslanmmr.github.io/Enerone/build/scripts/global.js"></script>
     <script type="text/javascript" src="/static/scripts/ui/dia.js"></script>
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/jquery.validate.js"></script>
@@ -187,12 +398,16 @@
         </svg></a>
       <div class="helper__container">
         <!--section-->
+        <div class="helper__section"><span class="helper__section-title">Всплывающие окна:</span>
+          <div class="helper__section-content"><a class="helper__section-button" href="#info" data-popup-open>Предупреждение</a><a class="helper__section-button" href="#feedback" data-popup-open>Обратная связь</a></div>
+        </div>
+        <!--section-->
         <div class="helper__section"><span class="helper__section-title">Страницы:</span>
           <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/index.html">Главная</a></div>
         </div>
         <!--section-->
         <div class="helper__section"><span class="helper__section-title">Личный кабинет:</span>
-          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Лк — Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Лк — Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Лк — Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">Лк — История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Лк — Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Лк — Профиль</a></div>
+          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Лк — Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Лк — Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Лк — Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk7.html">Лк — Взаиморасчеты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">Лк — История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Лк — Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Лк — Профиль</a></div>
         </div>
       </div>
     </div>
