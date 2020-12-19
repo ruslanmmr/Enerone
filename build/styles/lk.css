@@ -850,14 +850,14 @@ span.flatpickr-weekday {
 
 .lc-contract__head {
   display: flex;
-  flex-wrap: wrap; }
+  margin-right: -30px; }
   .lc-contract__head-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 15px; }
-    .lc-contract__head-block:not(:last-child) {
-      padding-right: 60px; }
+    margin-bottom: 15px;
+    padding-right: 30px;
+    flex: 0 1 auto; }
     .lc-contract__head-block span:first-child {
       font-size: 14px;
       margin: 0 0 4px 0;
@@ -869,10 +869,15 @@ span.flatpickr-weekday {
     line-height: 28px; }
 
 @media (max-width: 991px) {
-  .lc-contract__head-block:not(:last-child) {
-    padding-right: 40px; }
   .lc-contract__head-block span:first-child {
     margin-bottom: 0; } }
+
+@media (max-width: 775px) {
+  .lc-contract__head {
+    flex-wrap: wrap;
+    margin-right: -20px; }
+    .lc-contract__head-block {
+      padding-right: 20px; } }
 
 @media (max-width: 575px) {
   .lc-contract__head {
