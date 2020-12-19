@@ -40,7 +40,9 @@
                       | English (en)
                   --><a class="header-link" href="https://ruslanmmr.github.io/Enerone/build/lk1.html"> <strong>Кабинет — dmitry</strong></a><a class="header-link" href="/users/login/">(Выйти)</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">дл</a>
                 </div>
-                <div class="header__contacts"><a href="tel:+73512143334">+7 (35-12) 14-33-34</a><a href="mailto:info@esk-ne.ru">info@esk-ne.ru</a></div>
+                <div class="header__contacts">
+                  <div class="header__phone"><a href="tel:+73512143334">+7 (35-12) 14-33-34</a><a class="header__call-btn" href="#feedback" data-popup-open>Заказать звонок</a></div><a href="mailto:info@esk-ne.ru">info@esk-ne.ru</a>
+                </div>
                 <ul class="header__nav">
                   <li><a href="/analytics/" title="">Аналитика</a></li>
                   <li><a href="/calculators/" title="">Калькуляторы</a></li>
@@ -363,6 +365,37 @@
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/additional-methods.js"></script>
     <script type="text/javascript" src="/static/scripts/vendor/jquery-validation/localization/messages_ru.min.js"></script>
     <script type="text/javascript" src="/static/scripts/helpers.js"></script>
+    <!--feedback-->
+    <div class="popup popup-form" id="feedback" data-scroll-lock-scrollable data-scroll-lock-fill-gap>
+      <div class="popup-block">
+        <div class="popup-block__container popup-form__container">
+          <h6 class="popup__title">Заказать обратный звонок</h6><a class="popup__close" href="javascript:void(0);" data-popup-close></a>
+          <form class="n-form">
+            <div class="n-form__container row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="fname">Имя</label>
+                  <input class="form-control" id="fname" type="text" name="first_name" value="" required="">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="phone">Отчество</label>
+                  <input class="form-control" id="phone" type="text" name="phone" value="" required="">
+                </div>
+              </div>
+              <div class="col-sm-6 n-form__item">
+                <button class="button button_style-1 w-100" type="submit">Отправить</button>
+              </div>
+              <div class="col-auto n-form__item d-sm-inline-block d-none">
+                <button class="button button_style-2 w-100" type="button" aria-label="close popup" data-popup-close>Закрыть</button>
+              </div>
+              <p class="col-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!--lc scripts-->
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>

@@ -565,7 +565,7 @@ function prepareContentTablesToDisplay() {
 }
 
 $(document).ready(function (event) {
-  popup.init(); //popup.open($('#info'));
+  popup.init();
 });
 window.popup = {
   init: function init() {
