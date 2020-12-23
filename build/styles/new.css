@@ -16098,9 +16098,9 @@ input.error, .active-label + .error {
     color: #61B87C;
     font-size: 12px; }
   .table td, .table th {
-    padding: 20px 20px 20px 0; }
+    padding: 15px 15px 15px 0; }
     .table td:first-child, .table th:first-child {
-      padding-left: 20px; }
+      padding-left: 15px; }
   .table tr {
     vertical-align: top; }
   .table tr:nth-child(even) td {

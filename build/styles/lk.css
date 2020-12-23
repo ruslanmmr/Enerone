@@ -891,6 +891,8 @@ span.flatpickr-weekday {
 
 .lc-table {
   overflow: auto; }
+  .lc-table__table {
+    font-size: 12px; }
   .lc-table .form-check {
     margin: -2px 0 -2px 0; }
   .lc-table .form-check-label {
