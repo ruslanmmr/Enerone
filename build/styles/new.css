@@ -15797,7 +15797,7 @@ input.error, .active-label + .error {
     .popup-block__container {
       padding: 50px 40px;
       background-color: #fff;
-      min-height: 400px;
+      min-height: 300px;
       transform: translateY(20px);
       transition: transform 0.3s ease-out; }
   .popup.active {
@@ -15929,6 +15929,21 @@ input.error, .active-label + .error {
         margin: 15px -20px 0 -20px; }
       .popup-alert__button {
         margin: 30px 0 0 0; } }
+
+.popup-succes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.popup-succes__title {
+  margin: 0; }
+
+.popup-succes__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 0 25px 0;
+  color: #61B87C; }
 
 .home-banner {
   height: 520px; }

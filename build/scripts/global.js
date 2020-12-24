@@ -595,7 +595,17 @@ window.popup = {
     var event = function event() {
       _this.active = $popup;
       scrollLock.disablePageScroll();
-      $popup.addClass('active');
+      $popup.addClass('active'); //succes
+
+      if ($popup.hasClass('popup-succes')) {
+        var $icon = $popup.find('path')[0],
+            w = $icon.getTotalLength();
+        $icon.style.cssText = "stroke-dasharray:".concat(w, ";stroke-dashoffset:").concat(w, ";");
+        setTimeout(function () {
+          $icon.style.transition = '.5s ease-out';
+          $icon.style.strokeDashoffset = '0';
+        });
+      }
     };
 
     if (this.active) {

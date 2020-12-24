@@ -331,6 +331,8 @@ span.flatpickr-weekday {
       transition: background-color 5000s ease-in-out 0s; }
     .form-element__input:focus {
       cursor: text; }
+  .form-element textarea {
+    min-height: 136px; }
   .form-element .errorlist {
     font-size: 14px; }
   .form-element.focus .form-element__label, .form-element.filled .form-element__label, .form-element.active .form-element__label {
@@ -401,6 +403,10 @@ span.flatpickr-weekday {
 .select2-container--new-select .select2-results {
   cursor: default; }
 
+.select2-container--new-select .select2-results__options {
+  overflow: auto;
+  max-height: 200px; }
+
 .select2-container--new-select .select2-results__option {
   line-height: 20px;
   padding: 15px 18px;
@@ -449,6 +455,12 @@ span.flatpickr-weekday {
 .n-form__button {
   width: 100%; }
 
+.n-form > p:first-child {
+  margin-bottom: 25px; }
+
+.n-form > p:last-child {
+  margin-top: 25px; }
+
 .js-calendar {
   position: relative; }
   .js-calendar.active:after {
@@ -482,11 +494,6 @@ span.flatpickr-weekday {
       margin-right: 8px; }
     .lc-text-link .icon:last-child {
       margin-left: 8px; }
-
-.js-calendar {
-  position: relative; }
-  .js-calendar__input {
-    cursor: pointer; }
 
 .lc-wrapper {
   padding: 60px 0 100px 0;
@@ -928,7 +935,7 @@ span.flatpickr-weekday {
         bottom: 26px; } }
 
 .lc-filters {
-  flex-wrap: nowrap; }
+  margin-bottom: 5px; }
   .lc-filters__mobile-label {
     display: none; }
   .lc-filters__item {
@@ -947,13 +954,10 @@ span.flatpickr-weekday {
   @media (max-width: 1200px) {
     .lc-filters__line {
       display: none; } }
-  @media (max-width: 767px) {
-    .lc-filters {
-      flex-wrap: wrap; } }
   @media (max-width: 575px) {
     .lc-filters__mobile-label {
       display: block;
-      line-height: 36px;
+      line-height: 42px;
       min-width: 36px; } }
 
 .lc-block:not(:last-child) {

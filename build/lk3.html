@@ -38,7 +38,7 @@
                       | Русский (ru)
                     option(value='en')
                       | English (en)
-                  --><a class="header-link" href="https://ruslanmmr.github.io/Enerone/build/lk1.html"> <strong>Кабинет — dmitry</strong></a><a class="header-link" href="/users/login/">(Выйти)</a><a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">дл</a>
+                  --><a class="header-link prefix" href="https://ruslanmmr.github.io/Enerone/build/lk1.html"> <strong>Кабинет — dmitry</strong></a>(<a class="header-link suffix" href="/users/login/">Выйти</a>)<a class="header-user" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">дл</a>
                 </div>
                 <div class="header__contacts">
                   <div class="header__phone"><a href="tel:+73512143334">+7 (35-12) 14-33-34</a><a class="header__call-btn" href="#feedback" data-popup-open>Заказать звонок</a></div><a href="mailto:info@esk-ne.ru">info@esk-ne.ru</a>
@@ -200,6 +200,17 @@
         </div>
       </div>
     </div>
+    <!--succes-->
+    <div class="popup popup-succes" id="succes" data-scroll-lock-scrollable data-scroll-lock-fill-gap>
+      <div class="popup-block">
+        <div class="popup-block__container popup-succes__container"><a class="popup__close" href="javascript:void(0);" data-popup-close></a>
+          <svg class="popup-succes__icon" viewBox="0 0 65 59" fill="none" stroke="currentColor">
+            <path d="M1.5 36.8079L20.1349 56.7611L63.4635 1.23926" stroke-width="4"></path>
+          </svg>
+          <h6 class="popup__title popup-succes__title">Сообщение успешно отправлено</h6>
+        </div>
+      </div>
+    </div>
     <!--lc scripts-->
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
@@ -218,7 +229,7 @@
       <div class="helper__container">
         <!--section-->
         <div class="helper__section"><span class="helper__section-title">Всплывающие окна:</span>
-          <div class="helper__section-content"><a class="helper__section-button" href="#info" data-popup-open>Предупреждение</a><a class="helper__section-button" href="#feedback" data-popup-open>Обратная связь</a></div>
+          <div class="helper__section-content"><a class="helper__section-button" href="#info" data-popup-open>Предупреждение</a><a class="helper__section-button" href="#feedback" data-popup-open>Обратная связь</a><a class="helper__section-button" href="#succes" data-popup-open>Успешная отправка</a></div>
         </div>
         <!--section-->
         <div class="helper__section"><span class="helper__section-title">Страницы:</span>
