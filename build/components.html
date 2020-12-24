@@ -60,36 +60,142 @@
     </div>
     <div class="site-index">
       <div class="lc-wrapper">
-        <div class="container lc-wrapper__grid-container">
-          <div class="lc-sidebar-area toggle-section" data-out-hide>
-            <button class="lc-mobile-nav-btn toggle-section__trigger" aria-label="open nav"><span> </span><span>Меню личного кабинета</span></button>
-            <div class="lc-sidebar-area__content toggle-section__content">
-              <h2 class="lc-sidebar-area__title">Личный кабинет</h2>
-              <div class="lc-sidebar-area__head"><img class="lc-sidebar-area__image" src="/static/images/user.svg" alt="icon"><span class="lc-sidebar-area__name">Лужецкий<br> Дмитрий Александрович</span></div>
-              <div class="lc-sidebar-area__bottom"><span class="lc-sidebar-area__company">Fancymedia</span><a class="lc-text-link lc-sidebar-area__exit" href="/"><span>Выйти</span>
-                  <svg class="icon" viewBox="0 0 22 22" stroke="currentColor" stroke-width="2" fill="none">
-                    <path d="M10 18V21H21V1H10V4"></path>
-                    <path d="M12 11H2"></path>
-                    <path d="M6 6L2 11L6 16"></path>
-                  </svg></a></div>
-              <ul class="lc-sidebar-area__nav-list">
-                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk2.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">Главная</div></a></li>
-                <li class="lc-sidebar-area__nav-item"> <a class="active lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk3.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-shovel.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">Показания</div></a></li>
-                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk7.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-shovel.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">Взаиморасчеты</div></a></li>
-                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk4.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">История</div></a></li>
-                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk5.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-message.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">Сообщения<span>3</span></div></a></li>
-                <li class="lc-sidebar-area__nav-item"> <a class="lc-sidebar-area__nav-link" href="https://ruslanmmr.github.io/Enerone/build/lk6.html"><img class="icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-profile.svg" alt="image">
-                    <div class="lc-sidebar-area__nav-link-txt">Профиль</div></a></li>
-              </ul>
+        <h1 class="lc-wrapper__title container">Компоненты</h1>
+        <div class="container">
+          <div class="n-form row">
+            <div class="n-form__item col-sm-4">
+              <div class="form-element error filled">
+                <label class="form-element__label" for="1">Текстовое поле</label>
+                <input class="form-element__input" id="1" type="text" value="1000">
+                <ul class="errorlist">
+                  <li>This contract is already linked to your account.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="lc-wrapper__section">
-            <h1 class="lc-wrapper__title">Показания</h1>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element filled">
+                <label class="form-element__label" for="2">Текстовое поле</label>
+                <input class="form-element__input" id="2" type="text" value="text">
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element">
+                <label class="form-element__label" for="3">Текстовое поле</label>
+                <input class="form-element__input" id="3" type="text">
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small error filled">
+                <label class="form-element__label" for="4">Текстовое поле</label>
+                <input class="form-element__input" id="5" type="text" value="1000">
+                <ul class="errorlist">
+                  <li>This contract is already linked to your account.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small filled">
+                <label class="form-element__label" for="6">Текстовое поле</label>
+                <input class="form-element__input" id="6" type="text" value="text">
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small">
+                <label class="form-element__label" for="7">Текстовое поле</label>
+                <input class="form-element__input" id="7" type="text">
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element error filled">
+                <label class="form-element__label" for="9">Селект</label>
+                <select class="form-element__select" id="9">
+                  <option value=""></option>
+                  <option value="1" selected>value 1</option>
+                  <option value="2">value 2</option>
+                </select>
+                <ul class="errorlist">
+                  <li>This contract is already linked to your account.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element filled">
+                <label class="form-element__label" for="10">Селект</label>
+                <select class="form-element__select" id="10">
+                  <option value=""></option>
+                  <option value="1">value 1</option>
+                  <option value="2" selected>value 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element">
+                <label class="form-element__label" for="11">Селект</label>
+                <select class="form-element__select" id="11">
+                  <option value=""></option>
+                  <option value="1">value 1</option>
+                  <option value="2" disabled>value 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small error filled">
+                <label class="form-element__label" for="9">Селект</label>
+                <select class="form-element__select" id="9">
+                  <option value=""></option>
+                  <option value="1" selected>value 1</option>
+                  <option value="2">value 2</option>
+                </select>
+                <ul class="errorlist">
+                  <li>This contract is already linked to your account.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small filled">
+                <label class="form-element__label" for="10">Селект</label>
+                <select class="form-element__select" id="10">
+                  <option value=""></option>
+                  <option value="1">value 1</option>
+                  <option value="2" selected>value 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small">
+                <label class="form-element__label" for="11">Селект</label>
+                <select class="form-element__select" id="11">
+                  <option value=""></option>
+                  <option value="1">value 1</option>
+                  <option value="2" disabled>value 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element js-calendar">
+                <label class="form-element__label" for="date">Дата</label>
+                <input class="form-element__input js-calendar__input" id="date" type="text" readonly>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4">
+              <div class="form-element form-element_small js-calendar">
+                <label class="form-element__label" for="date2">Дата</label>
+                <input class="form-element__input js-calendar__input" id="date2" type="text" readonly>
+              </div>
+            </div>
+            <div class="n-form__item col-sm-4"></div>
+            <div class="n-form__item col-sm-3">
+              <button class="button button_style-1">Кнопка</button>
+            </div>
+            <div class="n-form__item col-sm-3">
+              <button class="button button_style-1 button_small">Кнопка</button>
+            </div>
+            <div class="n-form__item col-sm-3">
+              <button class="button button_style-2">Кнопка</button>
+            </div>
+            <div class="n-form__item col-sm-3">
+              <button class="button button_style-2 button_small">Кнопка</button>
+            </div>
           </div>
         </div>
       </div>

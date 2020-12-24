@@ -735,7 +735,7 @@ caption {
 th {
   text-align: inherit; }
 
-label {
+label:not(.form-element__label) {
   display: inline-block;
   margin-bottom: .5rem; }
 
@@ -8649,7 +8649,7 @@ label.control-label {
 
 .header .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
   color: #000;
-  transition: color 0.15s ease-in-out; }
+  transition: color 0.15s ease-out; }
   .header .bootstrap-select .dropdown-toggle .filter-option-inner-inner:hover {
     color: #50a16a; }
 
@@ -8659,14 +8659,14 @@ label.control-label {
   display: block;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out; }
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out; }
   .header .bootstrap-select .dropdown-menu.show {
     opacity: 1;
     visibility: visible; }
 
 .header .bootstrap-select .dropdown-item {
   padding: .65rem 1.5rem;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out; }
+  transition: background-color 0.15s ease-out, color 0.15s ease-out; }
   .header .bootstrap-select .dropdown-item:focus, .header .bootstrap-select .dropdown-item:hover {
     background-color: #FAB216; }
   .header .bootstrap-select .dropdown-item.active {
@@ -8833,7 +8833,7 @@ label.control-label {
   font-size: 11px;
   color: #fff !important;
   text-transform: uppercase;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out; }
+  transition: background-color 0.15s ease-out, color 0.15s ease-out; }
 
 .header-user:hover {
   background-color: #50a16a; }
@@ -8888,7 +8888,7 @@ label.control-label {
 .header__contacts a {
   margin-right: 50px;
   font-size: 16px;
-  transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-out;
   color: #000; }
   .header__contacts a:hover {
     color: #50a16a; }
@@ -11406,8 +11406,8 @@ table .table-ctrl {
   width: 100%;
   height: 0px; }
 
-input,
-textarea,
+input:not(.form-element__input),
+textarea:not(.form-element__input),
 div[contenteditable="true"],
 div[contenteditable="true"].form-control,
 textarea.form-control,
@@ -11438,14 +11438,14 @@ input.form-control {
   font-weight: normal;
   padding: 26px 20px 13px; }
 
-input:active,
-textarea:active,
+input:active:not(.form-element__input),
+textarea:active:not(.form-element__input),
 div[contenteditable="true"]:active,
 div[contenteditable="true"].form-control:active,
 textarea.form-control:active,
 input.form-control:active,
-input:focus,
-textarea:focus,
+input:focus:not(.form-element__input),
+textarea:focus:not(.form-element__input),
 div[contenteditable="true"]:focus,
 div[contenteditable="true"].form-control:focus,
 textarea.form-control:focus,
@@ -11568,16 +11568,16 @@ input.form-control:not(:placeholder-shown):invalid:focus {
   transition-duration: 0.3s;
   transition-timing-function: ease; }
 
-input:-ms-clear,
-textarea:-ms-clear,
+input:-ms-clear:not(.form-element__input),
+textarea:-ms-clear:not(.form-element__input),
 div[contenteditable="true"]:-ms-clear,
 div[contenteditable="true"].form-control:-ms-clear,
 textarea.form-control:-ms-clear,
 input.form-control:-ms-clear {
   display: none; }
 
-input:-webkit-autofill,
-textarea:-webkit-autofill,
+input:-webkit-autofill:not(.form-element__input),
+textarea:-webkit-autofill:not(.form-element__input),
 div[contenteditable="true"]:-webkit-autofill,
 div[contenteditable="true"].form-control:-webkit-autofill,
 textarea.form-control:-webkit-autofill,
@@ -11588,13 +11588,13 @@ div[contenteditable="true"]:-webkit-autofill:hover,
 div[contenteditable="true"].form-control:-webkit-autofill:hover,
 textarea.form-control:-webkit-autofill:hover,
 input.form-control:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill:focus,
+input:-webkit-autofill:focus:not(.form-element__input),
+textarea:-webkit-autofill:focus:not(.form-element__input),
 div[contenteditable="true"]:-webkit-autofill:focus,
 div[contenteditable="true"].form-control:-webkit-autofill:focus,
 textarea.form-control:-webkit-autofill:focus,
-input.form-control:-webkit-autofill:focus,
-input:-webkit-autofill:active,
+input.form-control:-webkit-autofill:focus:not(.form-element__input),
+input:-webkit-autofill:active:not(.form-element__input),
 textarea:-webkit-autofill:active,
 div[contenteditable="true"]:-webkit-autofill:active,
 div[contenteditable="true"].form-control:-webkit-autofill:active,
@@ -11709,8 +11709,8 @@ textarea.form-control {
   line-height: 14px; }
 
 @media (max-width: 575px) {
-  input,
-  textarea,
+  input:not(.form-element__input),
+  textarea:not(.form-element__input),
   div[contenteditable="true"],
   div[contenteditable="true"].form-control,
   textarea.form-control,
@@ -11734,14 +11734,14 @@ textarea.form-control {
     top: 24px; }
   .form-group .control-label.active-label {
     left: 0; }
-  input:active,
-  textarea:active,
+  input:active:not(.form-element__input),
+  textarea:active:not(.form-element__input),
   div[contenteditable="true"]:active,
   div[contenteditable="true"].form-control:active,
   textarea.form-control:active,
   input.form-control:active,
-  input:focus,
-  textarea:focus,
+  input:focus:not(.form-element__input),
+  textarea:focus:not(.form-element__input),
   div[contenteditable="true"]:focus,
   div[contenteditable="true"].form-control:focus,
   textarea.form-control:focus,
@@ -15649,6 +15649,9 @@ input.error, .active-label + .error {
 .header-link.prefix {
   margin-right: 10px; }
 
+.header-link.suffix {
+  margin: 0 4px; }
+
 .select-small {
   min-width: 100px;
   height: 36px; }
@@ -15660,7 +15663,7 @@ input.error, .active-label + .error {
     font-size: 14px !important;
     text-indent: 0 !important;
     margin: 0 !important;
-    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out; }
+    transition: opacity 0.15s ease-out, visibility 0.15s ease-out; }
     .select-small .control-label.active-label {
       opacity: 0 !important;
       visibility: hidden !important; }
@@ -15686,25 +15689,6 @@ input.error, .active-label + .error {
       top: 13px;
       right: 15px; }
 
-.js-calendar {
-  position: relative; }
-  .js-calendar.active:after {
-    transform: rotate(180deg); }
-  .js-calendar.active .control-label {
-    opacity: 0 !important;
-    visibility: hidden !important; }
-  .js-calendar::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: #4a4a4a transparent transparent;
-    position: absolute;
-    border-width: 8px 6px 0;
-    top: 15px;
-    right: 15px; }
-
 .header__phone {
   display: flex;
   flex-direction: column;
@@ -15720,7 +15704,7 @@ input.error, .active-label + .error {
   .header__call-btn {
     color: #61B87C !important;
     border-bottom: 1px solid #61B87C !important;
-    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+    transition: color 0.15s ease-out, border-color 0.15s ease-out; }
     .header__call-btn:hover {
       color: #50a16a !important;
       border-color: transparent !important; } }
@@ -15728,26 +15712,17 @@ input.error, .active-label + .error {
 @media (max-width: 850px) {
   .header__contacts a {
     color: #fff !important;
-    transition: opacity 0.15s ease-in-out; }
+    transition: opacity 0.15s ease-out; }
     .header__contacts a:hover {
       opacity: 0.8; }
   .header__phone {
     margin-bottom: 20px;
     align-items: flex-start; }
   .header__call-btn {
-    transition: opacity 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: opacity 0.15s ease-out, border-color 0.15s ease-out;
     border-bottom: 1px solid #fff; }
     .header__call-btn:hover {
       border-color: transparent #fff; } }
-
-.n-form__container {
-  margin-bottom: -20px; }
-
-.n-form__item {
-  margin-bottom: 20px; }
-
-.n-form__button {
-  width: 100%; }
 
 .button {
   cursor: pointer;
@@ -15767,16 +15742,16 @@ input.error, .active-label + .error {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.375rem;
-  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  font-size: 1.25rem;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out;
   height: 64px;
   line-height: 60px;
-  padding: 0 25px; }
+  padding: 0 25px;
+  width: 100%; }
   .button_style-1 {
     background-color: #61B87C;
     border: 2px solid #61B87C;
-    color: #fff;
-    letter-spacing: 1px; }
+    color: #fff; }
     .button_style-1:hover {
       background-color: #50a16a;
       border-color: #50a16a; }
@@ -15787,10 +15762,9 @@ input.error, .active-label + .error {
       background-color: rgba(97, 184, 124, 0.05);
       border-color: #61B87C; }
   .button_small {
-    line-height: 32px;
-    height: 36px;
+    line-height: 38px;
+    height: 42px;
     font-size: 1rem;
-    letter-spacing: normal;
     padding: 0 15px; }
   @media (max-width: 575px) {
     .button:not(.button_small) {
@@ -15814,7 +15788,7 @@ input.error, .active-label + .error {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out; }
   .popup-block {
     margin: auto;
     padding: 20px;
@@ -15825,7 +15799,7 @@ input.error, .active-label + .error {
       background-color: #fff;
       min-height: 400px;
       transform: translateY(20px);
-      transition: transform 0.3s ease-in-out; }
+      transition: transform 0.3s ease-out; }
   .popup.active {
     opacity: 1;
     visibility: visible;
@@ -15849,7 +15823,7 @@ input.error, .active-label + .error {
       width: 30px;
       height: 2px;
       background-color: #000;
-      transition: background-color 0.15s ease-in-out; }
+      transition: background-color 0.15s ease-out; }
     .popup__close::before {
       transform: translate(-50%, -50%) rotate(45deg); }
     .popup__close::after {
@@ -15966,7 +15940,7 @@ input.error, .active-label + .error {
       background-color: #61B87C; }
   .home-banner .carousel-control-next, .home-banner .carousel-control-prev {
     opacity: 1;
-    transition: opacity 0.15s ease-in-out; }
+    transition: opacity 0.15s ease-out; }
     .home-banner .carousel-control-next:hover, .home-banner .carousel-control-prev:hover {
       opacity: 0.75; }
   .home-banner__icon {

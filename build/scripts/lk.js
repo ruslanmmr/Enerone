@@ -3,6 +3,7 @@
 $(document).ready(function () {
   toggle();
   calendar();
+  formElements();
 });
 
 function toggle() {
@@ -83,8 +84,10 @@ function toggle() {
 function calendar() {
   var $calendar = $('.js-calendar__input');
   $calendar.each(function () {
-    var $parent = $(this).parents('.js-calendar');
-    flatpickr($calendar, {
+    console.log($(this));
+    var $this = $(this),
+        $parent = $this.parents('.js-calendar');
+    flatpickr($this, {
       "locale": "ru",
       disableMobile: "true",
       dateFormat: "d.m.Y",
@@ -99,6 +102,92 @@ function calendar() {
         $parent.removeClass('active');
       }
     });
+  });
+}
+
+function formElements() {
+  var $inputs = document.querySelectorAll('.form-element__input');
+  document.addEventListener('focus', function (event) {
+    inputEvents(event);
+  }, true);
+  document.addEventListener('blur', function (event) {
+    inputEvents(event);
+  }, true);
+  document.addEventListener('input', function (event) {
+    inputEvents(event);
+  }, true);
+
+  var inputEvents = function inputEvents(event) {
+    var $element = event.target,
+        $parent = event.target.parentNode;
+
+    if ($parent && $parent.classList.contains('form-element')) {
+      if (event.type == 'focus') {
+        $parent.classList.add('focus');
+      } else if (event.type == 'blur') {
+        $parent.classList.remove('focus');
+      } else {
+        checkInput($element); //remove errors
+
+        if ($parent.classList.contains('error')) {
+          $parent.classList.remove('error');
+          var $messages = $parent.querySelector('.errorlist');
+          if ($messages) $messages.remove();
+        }
+      }
+    }
+  };
+
+  var checkInput = function checkInput($element) {
+    var value = $element.value.replace(/^\s+|\s+$/g, ''),
+        $parent = $element.parentNode;
+
+    if (value !== '') {
+      $parent.classList.add('filled');
+    } else {
+      $parent.classList.remove('filled');
+    }
+  };
+
+  $inputs.forEach(function ($element) {
+    checkInput($element);
+  }); //selects
+
+  var $selects = $('.form-element__select');
+  $selects.select2({
+    theme: 'new-select',
+    minimumResultsForSearch: Infinity,
+    placeholder: {
+      id: '',
+      text: ''
+    },
+    allowClear: true
+  });
+  $selects.on('select2:select select2:open select2:close', function (event) {
+    var $this = $(event.target),
+        $parent = $this.parents('.form-element');
+
+    if (event.type == 'select2:open') {
+      $parent.addClass('focus');
+    } else if (event.type == 'select2:close') {
+      $parent.removeClass('focus');
+    } else {
+      $parent.addClass('filled'); //remove errors
+
+      if ($parent.hasClass('error')) {
+        $parent.removeClass('error');
+        var $messages = $parent.find('.errorlist');
+        if ($messages) $messages.remove();
+      }
+    }
+  });
+  $selects.each(function () {
+    var $this = $(this),
+        $parent = $this.parents('.form-element');
+
+    if ($this.val().replace(/^\s+|\s+$/g, '') !== '') {
+      $parent.addClass('filled');
+    }
   });
 }
 //# sourceMappingURL=maps/lk.js.map
