@@ -15646,8 +15646,8 @@ input.error, .active-label + .error {
   margin: 0 auto;
   max-width: 400px; }
 
-.header-link:not(:first-child) {
-  margin-left: 10px; }
+.header-link.prefix {
+  margin-right: 10px; }
 
 .select-small {
   min-width: 100px;
