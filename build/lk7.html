@@ -92,12 +92,28 @@
             <h1 class="lc-wrapper__title">Взаиморасчеты</h1>
             <!--filter-->
             <div class="lc-filters row">
+              <div class="col-6 col-sm-3 lc-filters__item">
+                <div class="form-group select-small">
+                  <label class="control-label" for="select5">Договор</label>
+                  <select class="form-control" id="select5" name="select5" required>
+                    <option value=""> </option>
+                    <option value="1">dsdfdfs</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6 col-sm-auto lc-filters__item">
+                <button class="button button_style-1 button_small w-100">Выбрать</button>
+              </div>
+            </div>
+            <div class="lc-filters row">
               <div class="col-md col-sm-6">
                 <div class="row flex-nowrap">
                   <div class="col-auto lc-filters__mobile-label">от</div>
                   <div class="col lc-filters__item">
                     <div class="form-group select-small">
-                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
+                      <label class="control-label" for="select1" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
                       <select class="form-control" id="select1" name="select4" required="">
                         <option value=""> </option>
                         <option value="1">1</option>
@@ -108,7 +124,7 @@
                   </div>
                   <div class="col lc-filters__item">
                     <div class="form-group select-small">
-                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Год">Год</label>
+                      <label class="control-label" for="select2" data-toggle="tooltip" data-placement="top" title="Год">Год</label>
                       <select class="form-control" id="select2" name="select4" required="">
                         <option value=""> </option>
                         <option value="1">1</option>
@@ -125,7 +141,7 @@
                   <div class="col-auto lc-filters__mobile-label">до</div>
                   <div class="col lc-filters__item">
                     <div class="form-group select-small">
-                      <label class="control-label" for="select4" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
+                      <label class="control-label" for="select3" data-toggle="tooltip" data-placement="top" title="Месяц">Месяц</label>
                       <select class="form-control" id="select3" name="select4" required="">
                         <option value=""> </option>
                         <option value="1">1</option>
@@ -147,11 +163,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-auto lc-filters__item order-sm-4">
-                <button class="button button_style-1 button_small">Показать</button>
+              <div class="col-6 col-sm-auto lc-filters__item">
+                <button class="button button_style-1 button_small w-100">Показать</button>
               </div>
-              <div class="col-auto lc-filters__item order-sm-3">
-                <button class="button button_style-2 button_small">Сбросить</button>
+              <div class="col-6 col-sm-auto lc-filters__item">
+                <button class="button button_style-2 button_small w-100">Сбросить</button>
               </div>
             </div>
             <!--table-->
@@ -373,7 +389,7 @@
     <script src="/static/scripts/Chart.bundle.js"></script>
     <script src="/static/scripts/chartpiecelabel.js"></script>
     <script src="/static/scripts/imask.min.js"></script>
-    <script src="/static/scripts/main.js"></script>
+    <script src="https://ruslanmmr.github.io/Enerone/build/scripts/main.js"></script>
     <script src="/static/scripts/js.cookie.js"></script>
     <script src="/static/scripts/csrf.js"></script>
     <script src="https://ruslanmmr.github.io/Enerone/build/scripts/libs/scroll-lock.min.js"></script>

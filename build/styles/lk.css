@@ -19,7 +19,8 @@
   top: calc(100% + 10px) !important;
   right: auto !important; }
   .flatpickr-calendar * {
-    outline: none; }
+    outline: none;
+    user-select: none; }
 
 .flatpickr-calendar.open,
 .flatpickr-calendar.inline {
@@ -320,6 +321,9 @@ span.flatpickr-weekday {
   padding: 60px 0 100px 0;
   background-color: #fff;
   color: #4A4A4A; }
+  .lc-wrapper textarea.form-control {
+    height: 64px;
+    padding: 30px 18px 0 18px; }
   .lc-wrapper_type-2 {
     display: flex; }
   .lc-wrapper__title {
@@ -352,7 +356,10 @@ span.flatpickr-weekday {
         display: block; } }
   @media (max-width: 575px) {
     .lc-wrapper {
-      padding: 40px 0 60px 0; } }
+      padding: 40px 0 60px 0; }
+      .lc-wrapper textarea.form-control {
+        height: 56px;
+        padding: 26px 18px 0 !important; } }
 
 .lc-sidebar-area {
   background-color: #FAFAFA;
@@ -883,11 +890,7 @@ span.flatpickr-weekday {
   .lc-contract__head {
     margin-bottom: 5px; }
     .lc-contract__head-block {
-      margin-bottom: 10px; }
-  .lc-contract__table {
-    margin-right: -20px;
-    margin-left: -20px;
-    width: calc(100% + 40px); } }
+      margin-bottom: 10px; } }
 
 .lc-table {
   overflow: auto; }
@@ -907,7 +910,9 @@ span.flatpickr-weekday {
   @media (max-width: 575px) {
     .lc-table {
       margin: 0 -20px;
-      overflow: hidden; } }
+      overflow: hidden; }
+      .lc-table__table {
+        font-size: 14px; } }
 
 .lc-print-line {
   display: flex;
