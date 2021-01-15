@@ -1,0 +1,45 @@
+.document {
+  margin: 0;
+  padding: 40px;
+  font-family: sans-serif;
+  font-size: 14px; }
+  .document__head {
+    text-align: center;
+    margin: 0 0 30px 0; }
+  .document__table td, .document__table th {
+    border: 1px solid #000;
+    position: relative; }
+  .document__table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: inherit; }
+  .document__table td, .document__table th {
+    padding: 4px; }
+  .document__table th {
+    text-align: left;
+    font-weight: inherit; }
+
+.bold {
+  font-weight: 700; }
+
+.clear td {
+  border: none; }
+
+.bb {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.pt-1 td {
+  padding-top: 25px; }
+
+.pt-2 td {
+  padding-top: 50px; }
+
+.pt-3 td {
+  padding-top: 75px; }
+
+/*# sourceMappingURL=maps/table.css.map */
