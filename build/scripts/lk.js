@@ -4,6 +4,7 @@ $(document).ready(function () {
   toggle();
   calendar();
   formElements();
+  if (tippy) tippy('[data-tippy-content]');
 });
 
 function toggle() {
@@ -11,8 +12,8 @@ function toggle() {
       speed = 150;
   $section.each(function () {
     var $this = $(this),
-        $toggle = $this.children('.toggle-section__trigger'),
-        $content = $this.children('.toggle-section__content'),
+        $toggle = $this.find('.toggle-section__trigger'),
+        $content = $this.find('.toggle-section__content'),
         state = $this.hasClass('active') ? true : false,
         initialized;
     $toggle.on('click', function () {
@@ -116,6 +117,9 @@ function formElements() {
   document.addEventListener('input', function (event) {
     inputEvents(event);
   }, true);
+  document.addEventListener('change', function (event) {
+    inputEvents(event);
+  }, true);
 
   var inputEvents = function inputEvents(event) {
     var $element = event.target,
@@ -188,25 +192,37 @@ function formElements() {
     if ($this.val().replace(/^\s+|\s+$/g, '') !== '') {
       $parent.addClass('filled');
     }
+  }); //checkboxes 
+
+  $(document).on('change', '[data-checkbox-group]', function (event) {
+    var $target = $(event.target),
+        type = $target.attr('data-checkbox-type'),
+        group = $target.attr('data-checkbox-group'),
+        $targets = $("[data-checkbox-group='".concat(group, "']"));
+
+    if ($target.is(':checked')) {
+      $targets.each(function () {
+        var $this = $(this),
+            self_type = $this.attr('data-checkbox-type');
+
+        if (self_type !== type) {
+          $this.prop('checked', false);
+        }
+      });
+    }
+  }); //file
+
+  $(document).on('change', '.form-upload__input', function (event) {
+    var $this = $(this),
+        $label = $this.prev(),
+        val = $this.val();
+
+    if (val) {
+      var count = $this[0].files.length;
+      $label.text("\u0417\u0430\u0433\u0440\u0443\u0436\u0443\u0435\u043D\u043E \u0444\u0430\u0439\u043B\u043E\u0432: ".concat(count));
+    } else {
+      $label.text('Загрузить файлы');
+    }
   });
-} //checkboxes 
-
-
-$(document).on('change', '[data-checkbox-group]', function (event) {
-  var $target = $(event.target),
-      type = $target.attr('data-checkbox-type'),
-      group = $target.attr('data-checkbox-group'),
-      $targets = $("[data-checkbox-group='".concat(group, "']"));
-
-  if ($target.is(':checked')) {
-    $targets.each(function () {
-      var $this = $(this),
-          self_type = $this.attr('data-checkbox-type');
-
-      if (self_type !== type) {
-        $this.prop('checked', false);
-      }
-    });
-  }
-});
+}
 //# sourceMappingURL=maps/lk.js.map

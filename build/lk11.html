@@ -121,6 +121,134 @@
                   </select>
                 </div>
               </div>
+              <div class="lc-filters__item col-sm-auto">
+                <button class="button button_style-1 button_small w-100">Если нужна кнопка</button>
+              </div>
+            </div>
+            <div class="lc-block mt-20">
+              <div class="lc-block__head">
+                <h2 class="lc-block__title">Какой-то энергообъект</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="lc-block__content">
+                <!--block-->
+                <div class="lc-py-block toggle-section active" data-slide>
+                  <div class="lc-py-block__head">
+                    <div class="lc-py-block__heading">
+                      <h3 class="lc-py-block__title">Название ПУ / Номер</h3><span class="lc-py-block__tooltip" data-tippy-placement="right" data-tippy-content="Lorem ipsum dolor sit amet">!</span>
+                    </div><span class="lc-py-block__status">Активен</span>
+                    <button class="lc-py-block__trigger toggle-section__trigger" type="button" aria-label="Развернуть">
+                      <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="lc-py-block__content toggle-section__content">
+                    <div class="lc-py-block__container">
+                      <div class="row lc-py-block__section">
+                        <div class="lc-py-block__item lc-py-block__prev-value col-sm-auto"><span class="lc-py-block__item-title">Предидущие показания</span><span class="lc-py-block__item-value">280838</span></div>
+                        <div class="lc-py-block__item col-sm col-md-4">
+                          <div class="form-element form-element_small">
+                            <label class="form-element__label" for="2">Текущие показания</label>
+                            <input class="form-element__input" id="2" type="text">
+                          </div>
+                        </div>
+                        <div class="lc-py-block__item lc-py-block__next-value col-sm-auto"><span class="lc-py-block__item-title">Расход ПУ</span><span class="lc-py-block__item-value">280838</span></div>
+                      </div>
+                      <div class="row lc-py-block__section">
+                        <div class="lc-py-block__item col-sm-6 col-md-4">
+                          <div class="form-upload">
+                            <label class="button button_style-3 button_small form-upload__label" for="file">Загрузить файл</label>
+                            <input class="form-upload__input" id="file" type="file">
+                          </div>
+                        </div>
+                        <div class="lc-py-block__item col-sm-6 col-md-4">
+                          <button class="button button_style-1 button_small w-100">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--block-->
+                <div class="lc-py-block toggle-section" data-slide>
+                  <div class="lc-py-block__head">
+                    <div class="lc-py-block__heading">
+                      <h3 class="lc-py-block__title">Название ПУ / Номер</h3><span class="lc-py-block__tooltip" data-tippy-placement="right" data-tippy-content="Lorem ipsum dolor sit amet">!</span>
+                    </div><span class="lc-py-block__status">Активен</span>
+                    <button class="lc-py-block__trigger toggle-section__trigger" type="button" aria-label="Развернуть">
+                      <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="lc-py-block__content toggle-section__content">
+                    <div class="lc-py-block__container">
+                      <div class="row lc-py-block__section">
+                        <div class="lc-py-block__item lc-py-block__prev-value col-sm-auto"><span class="lc-py-block__item-title">Предидущие показания</span><span class="lc-py-block__item-value">280838</span></div>
+                        <div class="lc-py-block__item col-sm col-md-4">
+                          <div class="form-element form-element_small error">
+                            <label class="form-element__label" for="2">Текущие показания</label>
+                            <input class="form-element__input" id="2" type="text">
+                            <ul class="errorlist">
+                              <li>This contract is already linked to your account.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="lc-py-block__item lc-py-block__next-value col-sm-auto"><span class="lc-py-block__item-title">Расход ПУ</span><span class="lc-py-block__item-value">280838</span></div>
+                      </div>
+                      <div class="row lc-py-block__section">
+                        <div class="lc-py-block__item col-sm-6 col-md-4">
+                          <div class="form-upload">
+                            <label class="button button_style-3 button_small form-upload__label" for="file">Загрузить файл</label>
+                            <input class="form-upload__input" id="file" type="file">
+                            <ul class="errorlist">
+                              <li>This contract is already linked to your account.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="lc-py-block__item col-sm-6 col-md-4">
+                          <div class="succes-message">Показания успешно отправлены!</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div class="lc-block__head">
+                <h4>Загрузка показаний по всем ПУ одним файлом</h4>
+              </div>
+              <div class="lc-block__content">
+                <div class="n-form">
+                  <div class="n-form__container row">
+                    <div class="n-form__item col-sm-6 col-md-4">
+                      <div class="form-upload">
+                        <label class="button button_style-3 button_small form-upload__label" for="file">Загрузить файл</label>
+                        <input class="form-upload__input" id="file" type="file">
+                      </div>
+                    </div>
+                    <div class="n-form__item col-sm-6 col-md-4">
+                      <button class="button button_style-1 button_small w-100">Отправить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lc-block">
+              <div class="lc-block__head">
+                <h4>Шаблоны файлов для загрузки</h4>
+              </div>
+              <div class="lc-block__content">
+                <div class="lc-download-template">
+                  <h6 class="lc-download-template__title">Шаблон 1</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum consequatur atque voluptates quia porro quos eius laudantium (<a href="#">Скачать образец</a>).</p>
+                </div>
+                <div class="lc-download-template">
+                  <h6 class="lc-download-template__title">Шаблон 2</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. (<a href="#">Скачать образец</a>).</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -257,6 +385,8 @@
     <!--lc scripts  -->
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="https://ruslanmmr.github.io/Enerone/build/scripts/lk.js"></script>
     <!--helper (preview only)-->
     <link rel="stylesheet" href="https://ruslanmmr.github.io/Enerone/build/styles/helper.css">

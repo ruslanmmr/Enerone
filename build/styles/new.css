@@ -15761,11 +15761,20 @@ input.error, .active-label + .error {
     .button_style-2:hover {
       background-color: rgba(97, 184, 124, 0.05);
       border-color: #61B87C; }
+  .button_style-3 {
+    background-color: #FAB216;
+    border: 2px solid #FAB216;
+    color: #fff; }
+    .button_style-3:hover {
+      background-color: #eba308;
+      border-color: #eba308; }
   .button_small {
     line-height: 38px;
     height: 42px;
     font-size: 1rem;
     padding: 0 15px; }
+    .button_small ~ .errorlist {
+      font-size: 12px; }
   @media (max-width: 575px) {
     .button:not(.button_small) {
       line-height: 52px;
