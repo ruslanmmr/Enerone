@@ -189,5 +189,24 @@ function formElements() {
       $parent.addClass('filled');
     }
   });
-}
+} //checkboxes 
+
+
+$(document).on('change', '[data-checkbox-group]', function (event) {
+  var $target = $(event.target),
+      type = $target.attr('data-checkbox-type'),
+      group = $target.attr('data-checkbox-group'),
+      $targets = $("[data-checkbox-group='".concat(group, "']"));
+
+  if ($target.is(':checked')) {
+    $targets.each(function () {
+      var $this = $(this),
+          self_type = $this.attr('data-checkbox-type');
+
+      if (self_type !== type) {
+        $this.prop('checked', false);
+      }
+    });
+  }
+});
 //# sourceMappingURL=maps/lk.js.map
