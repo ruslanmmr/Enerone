@@ -89,84 +89,37 @@
             </div>
           </div>
           <div class="lc-wrapper__section">
-            <h1 class="lc-wrapper__title">Отчет по пользователям</h1>
-            <div class="lc-statistics">
-              <div class="lc-statistics__container row">
-                <!--.lc-statistics__total можно убрать если не надо-->
-                <div class="lc-statistics__total col-lg-auto"><span>10000</span><span>пользователей</span></div>
-                <ul class="lc-statistics__list col-lg col-sm-6">
-                  <li class="lc-statistics__item"><span>Общее кол-во пользователей</span><span>1000</span></li>
-                  <li class="lc-statistics__item"><span>Активные пользователи</span><span>-</span></li>
-                  <li class="lc-statistics__item"><span>Не завершили регистрацию</span><span>22</span></li>
-                </ul>
-                <ul class="lc-statistics__list col-lg col-sm-6">
-                  <li class="lc-statistics__item"><span>Всего договоров</span><span>100</span></li>
-                  <li class="lc-statistics__item"><span>Пользователи с договорами</span><span>20</span></li>
-                </ul>
-              </div>
+            <h1 class="lc-wrapper__title">Передача показаний</h1>
+            <!--опционально текст-->
+            <div class="mb-40">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at repellendus nesciunt vitae! Molestiae iste maxime eaque architecto. Quis ipsum quibusdam illum explicabo deleniti optio dolore dignissimos quaerat deserunt dolorum.</p>
             </div>
             <div class="lc-filters row">
-              <div class="col-12 col-sm-6 col-md-4 lc-filters__item">
-                <div class="form-element form-element_small js-calendar">
-                  <label class="form-element__label" for="date">Период</label>
-                  <input class="form-element__input js-calendar__input" id="date" type="text" readonly>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 lc-filters__item">
+              <div class="lc-filters__item col-12 col-sm-6 col-md-4">
                 <div class="form-element form-element_small">
-                  <label class="form-element__label" for="11">Группировать</label>
-                  <select class="form-element__select" id="11">
+                  <label class="form-element__label" for="1">Выберите договор</label>
+                  <select class="form-element__select" id="1">
                     <option value=""></option>
-                    <option value="1">по дням</option>
-                    <option value="2">по месяцам</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
                   </select>
                 </div>
               </div>
-            </div>
-            <div class="lc-filters row">
-              <div class="lc-filters__item col-sm-auto">
-                <div class="form-checkbox">
-                  <input class="form-checkbox__input" type="checkbox" id="12">
-                  <label class="form-checkbox__label" for="12">общее ко-во пользователей</label>
+              <div class="lc-filters__item col-12 col-sm-6 col-md-4">
+                <div class="form-element form-element_small">
+                  <label class="form-element__label" for="1">Выбора энергообъект</label>
+                  <select class="form-element__select" id="1">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
                 </div>
-              </div>
-              <div class="lc-filters__item col-sm-auto">
-                <div class="form-checkbox">
-                  <input class="form-checkbox__input" type="checkbox" id="13">
-                  <label class="form-checkbox__label" for="13">кол-во логинов</label>
-                </div>
-              </div>
-              <div class="lc-filters__item col-sm-auto">
-                <div class="form-checkbox">
-                  <input class="form-checkbox__input" type="checkbox" id="14">
-                  <label class="form-checkbox__label" for="14">кол-во регистраций</label>
-                </div>
-              </div>
-            </div>
-            <div class="lc-diagram">
-              <canvas class="lc-diagram__element"></canvas>
-            </div>
-            <div class="lc-statistics">
-              <div class="lc-statistics__container row">
-                <div class="lc-statistics__total col-12"><span>10000</span><span>чего-то выбранного</span></div>
-              </div>
-            </div>
-            <div class="lc-statistics">
-              <div class="lc-statistics__container row">
-                <div class="lc-statistics__total col-sm-6"><span>10000</span><span>чего-то выбранного</span></div>
-                <div class="lc-statistics__total col-sm-6"><span>1000</span><span>чего-то выбранного</span></div>
-              </div>
-            </div>
-            <div class="lc-statistics">
-              <div class="lc-statistics__container row">
-                <div class="lc-statistics__total col-sm-4"><span>10000</span><span>чего-то выбранного</span></div>
-                <div class="lc-statistics__total col-sm-4"><span>10000</span><span>чего-то выбранного</span></div>
-                <div class="lc-statistics__total col-sm-4"><span>10000</span><span>чего-то выбранного</span></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-4">
-                <button class="button button_style-1">Скачать отчет</button>
               </div>
             </div>
           </div>
@@ -305,8 +258,6 @@
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
     <script src="https://ruslanmmr.github.io/Enerone/build/scripts/lk.js"></script>
-    <!--график от балды стоит, можно не ориентироваться вообще на него-->
-    <script src="https://ruslanmmr.github.io/Enerone/build/scripts/d.js"></script>
     <!--helper (preview only)-->
     <link rel="stylesheet" href="https://ruslanmmr.github.io/Enerone/build/styles/helper.css">
     <div class="helper"><a class="helper__trigger" href="javascript:void(0);">

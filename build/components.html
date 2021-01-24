@@ -62,7 +62,7 @@
       <div class="lc-wrapper">
         <h1 class="lc-wrapper__title container">Компоненты</h1>
         <div class="container">
-          <div class="n-form">
+          <div class="n-form mb-4">
             <div class="n-form__container row">
               <div class="n-form__item col-sm-4">
                 <div class="form-element error filled">
@@ -224,6 +224,46 @@
               </div>
             </div>
           </div>
+          <div class="lc-filters row">
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" id="12" name="1" checked data-checkbox-group="1" data-checkbox-type="1">
+                <label class="form-checkbox__label" for="12">все</label>
+              </div>
+            </div>
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" id="13" name="2" data-checkbox-group="1" data-checkbox-type="2">
+                <label class="form-checkbox__label" for="13">интегральные по файлу</label>
+              </div>
+            </div>
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" id="14" name="3" data-checkbox-group="1" data-checkbox-type="2">
+                <label class="form-checkbox__label" for="14">интегральные</label>
+              </div>
+            </div>
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" id="15" name="4" data-checkbox-group="1" data-checkbox-type="2">
+                <label class="form-checkbox__label" for="15">интервальные</label>
+              </div>
+            </div>
+          </div>
+          <div class="lc-filters row">
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-radio">
+                <input class="form-radio__input" type="radio" id="16" name="1" checked>
+                <label class="form-radio__label" for="16">сумма платежей</label>
+              </div>
+            </div>
+            <div class="lc-filters__item col-sm-auto">
+              <div class="form-radio">
+                <input class="form-radio__input" type="radio" id="17" name="1">
+                <label class="form-radio__label" for="17">кол-во платежей</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -344,6 +384,17 @@
         </div>
       </div>
     </div>
+    <!--popup-->
+    <div class="popup popup-alert" id="info" data-scroll-lock-scrollable data-scroll-lock-fill-gap>
+      <div class="popup-block">
+        <div class="popup-block__container popup-alert__container"><img class="popup-alert__icon" src="https://ruslanmmr.github.io/Enerone/build/img/ico-alert.svg" alt="icon">
+          <h6 class="popup-alert__title">Документ не может быть напечатан</h6>
+          <p>Выберите период, за который необходимо распечатать <span>Счет</span></p>
+          <div class="popup-alert__scene"><img class="popup-alert__scene-image" src="https://ruslanmmr.github.io/Enerone/build/img/table.jpg" alt="img"><img class="popup-alert__scene-cursor" src="https://ruslanmmr.github.io/Enerone/build/img/cursor.svg" alt="cursor"><img class="popup-alert__scene-check" src="https://ruslanmmr.github.io/Enerone/build/img/check.jpg" alt="cursor"></div>
+          <button class="button button_style-1 button_small popup-alert__button" aria-label="close" type="button" data-popup-close>ОК</button>
+        </div>
+      </div>
+    </div>
     <!--lc scripts-->
     <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
@@ -370,7 +421,7 @@
         </div>
         <!--section-->
         <div class="helper__section"><span class="helper__section-title">Личный кабинет:</span>
-          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Лк — Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Лк — Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Лк — Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">Лк — История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Лк — Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Лк — Профиль</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk7.html">Лк — Взаиморасчеты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk8.html">Лк — Отчет по пользователям</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk9.html">Лк — Отчет по платежам</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk10.html">Лк — Отчет по переданным показаниям</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/components.html">Компоненты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/table.html">Таблица</a></div>
+          <div class="helper__section-content"><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk1.html">Старт</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk2.html">Главная</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk3.html">Показания</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk4.html">История</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk5.html">Сообщения</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk6.html">Профиль</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk7.html">Взаиморасчеты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk8.html">Отчет по пользователям</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk9.html">Отчет по платежам</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk10.html">Отчет по переданным показаниям</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/lk11.html">Передача показаний</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/components.html">Компоненты</a><a class="helper__section-button" href="https://ruslanmmr.github.io/Enerone/build/table.html">Таблица</a></div>
         </div>
       </div>
     </div>
