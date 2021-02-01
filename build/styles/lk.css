@@ -5,6 +5,7 @@
   margin-top: 20px; }
 
 .flatpickr-calendar {
+  z-index: 99999;
   background: transparent;
   opacity: 0;
   text-align: center;
@@ -31,9 +32,6 @@
   opacity: 1;
   max-height: 640px;
   visibility: visible; }
-
-.flatpickr-calendar.open {
-  z-index: 99999; }
 
 .flatpickr-calendar.animate.open {
   -webkit-animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);
