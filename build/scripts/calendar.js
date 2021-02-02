@@ -1,7 +1,9 @@
 "use strict";
 
 $(document).ready(function () {
-  calendar();
+  setTimeout(function () {
+    calendar();
+  }, 500);
 });
 
 function calendar() {

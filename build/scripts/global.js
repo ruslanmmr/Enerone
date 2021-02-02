@@ -49,8 +49,7 @@ $(document).ready(function (event) {
 });
 $(window).resize(function (event) {
   setBenefitsCornerPos();
-}); // актуализация отображения инпутов на странице
-// если в них есть данные, то приводим к активному виду
+}); // если в них есть данные, то приводим к активному виду
 
 function prepareInputs() {
   $('input , textarea').not('.input_placeholder, .form-checkbox__input, .form-radio__input').each(function (index) {
