@@ -572,6 +572,7 @@ span.flatpickr-weekday {
   .js-calendar.active:after {
     transform: rotate(180deg); }
   .js-calendar::after {
+    pointer-events: none;
     content: '';
     display: block;
     width: 0;
