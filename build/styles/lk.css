@@ -290,6 +290,10 @@ span.flatpickr-weekday {
   .flatpickr-day:hover {
     color: #fff;
     background-color: #FAB216; }
+  .flatpickr-day.flatpickr-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    color: #8c8c8c; }
 
 .flatpickr-day.today {
   border: 1px solid #FAB216;
